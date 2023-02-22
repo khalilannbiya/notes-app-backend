@@ -62,7 +62,7 @@ class NotesService {
     const index = this._notes.findIndex((note) => note.id === id);
 
     if (index === -1) {
-      throw new Error('Catatan gagal dihapus. Id tidak ditemukan');
+      throw new Error('Catatan tidak ditemukan');
     }
 
     this._notes.splice(index, 1);
